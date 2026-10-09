@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffe4ef">
+<title>إلى أوبا ♡</title>
+<style>
+:root{--pink:#f7a9c4;--rose:#c94f7c;--pale:#fff4f8;--ink:#603748}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at top,#fff 0,#fff3f8 45%,#ffe0ec 100%);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.8}
+.wrap{width:min(760px,92%);margin:auto;padding:24px 0 60px}
+.hero{text-align:center;padding:48px 18px 34px;border:1px solid #f8c9da;border-radius:30px;background:#ffffffc9;box-shadow:0 12px 35px #b54c7612;position:relative;overflow:hidden}
+.eyebrow{font-size:.95rem;letter-spacing:.04em;color:var(--rose)}
+h1{font-size:clamp(2.4rem,9vw,4.4rem);line-height:1.15;margin:8px 0;color:#c94f7c}
+.subtitle{max-width:480px;margin:12px auto 22px}
+button,.button{border:0;border-radius:999px;background:var(--rose);color:white;padding:12px 20px;font-size:1rem;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;box-shadow:0 6px 15px #c94f7c30}
+button.secondary{background:#fff;color:var(--rose);border:1px solid #f1b3ca;box-shadow:none}
+section{margin-top:22px;padding:24px;background:#ffffffd9;border:1px solid #f8c9da;border-radius:24px}
+h2{font-size:1.35rem;margin:0 0 10px;color:#bd4773}
+.small{font-size:.92rem;color:#8b6574}
+.letter{display:none;background:#fff5f9;border:1px dashed #e7a0bb;border-radius:18px;padding:18px;margin-top:16px;white-space:pre-line}
+.letter.show{display:block;animation:pop .3s ease}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.memory{min-height:150px;border-radius:18px;background:linear-gradient(145deg,#ffe0eb,#fff7fa);border:1px solid #f6c1d5;display:flex;align-items:center;justify-content:center;text-align:center;padding:12px;overflow:hidden}
+.memory img{width:100%;height:100%;min-height:150px;object-fit:cover;border-radius:14px}
+.songbox{text-align:center;background:#fff5f9;padding:18px;border-radius:18px}
+footer{text-align:center;padding:28px 8px 0;color:#9b6d7e;font-size:.9rem}
+.heart{position:absolute;opacity:.5;animation:float 4s ease-in-out infinite}
+.h1{top:15px;left:20px;font-size:28px}.h2{bottom:12px;right:20px;font-size:22px;animation-delay:1s}
+@keyframes float{50%{transform:translateY(-10px) rotate(8deg)}}
+@keyframes pop{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:480px){section{padding:18px}.grid{gap:8px}.memory{min-height:125px}.memory img{min-height:125px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="hero">
+    <span class="heart h1">♡</span><span class="heart h2">♥</span>
+    <div class="eyebrow">رسالة صغيرة من أوسي إلى أوبا</div>
+    <h1>يا Ruby ♡</h1>
+    <p class="subtitle">يمكن المسافة بيننا كبيرة، بس فيه أشياء توصل للقلب من غير ما تحتاج طريق.</p>
+    <button onclick="document.getElementById('welcome').classList.toggle('show')">افتحي رسالتي 💌</button>
+    <div class="letter" id="welcome">إلى أوبا الحلوة،<br><br>سويت لكِ هذا المكان الصغير عشان يكون لكِ وحدك، وكل ما فتحتيه تتذكري إن فيه أوسي يفكر فيكِ ويحب يشوفك مبسوطة. مو لازم تكون الهدية كبيرة عشان يكون معناها كبير. ♡<br><br>من أوسي، بكل الحب.</div>
+  </header>
+
+  <section>
+    <h2>💌 رسائل لكِ وحدك</h2>
+    <p class="small">اختاري الرسالة اللي تحتاجيها اليوم.</p>
+    <div class="grid">
+      <button class="secondary" onclick="letter('miss')">لما تشتاقي لي ♡</button>
+      <button class="secondary" onclick="letter('sad')">لما تكوني زعلانة 🌷</button>
+      <button class="secondary" onclick="letter('smile')">لما تحتاجي تبتسمي ☀️</button>
+      <button class="secondary" onclick="letter('love')">لما تسألي ليش أحبك؟ 💗</button>
+    </div>
+    <div class="letter" id="secret"></div>
+  </section>
+
+  <section>
+    <h2>📸 ركن ذكرياتنا</h2>
+    <p class="small">هنا مكان صوركم. استبدلي المربعات بصور حقيقية قبل نشر الموقع.</p>
+    <div class="grid">
+      <div class="memory">صورة لذكرى تحبيها<br>♡</div>
+      <div class="memory">صورة تضحككم كل ما شفتوها<br>♡</div>
+      <div class="memory">لحظة ما تنسيها<br>♡</div>
+      <div class="memory">صورة تمثل حكايتكم<br>♡</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🎵 أغنيتنا</h2>
+    <div class="songbox">
+      <div style="font-size:2rem">♫ ♡ ♫</div>
+      <p>فيه أغاني نسمعها، وفيه أغاني تذكرنا بشخص واحد.</p>
+      <p class="small">أضيفي رابط أغنيتكم المفضلة هنا قبل النشر.</p>
+      <a class="button" href="https://www.youtube.com/" target="_blank" rel="noopener">اسمعي أغنيتنا 🎧</a>
+    </div>
+  </section>
+
+  <footer>صُنع بحب من أوسي إلى أوبا ♡<br><span class="small">كل وردة هنا تقول: أنتِ غالية.</span></footer>
+</main>
+<script>
+const messages={
+miss:"لو اشتقتِ لي، تذكري إن المسافة تقيس الأماكن، مو مكانتكِ عندي. أتمنى لو أقدر أكون جنبك الآن، لكن إلى أن يصير هذا، اعتبري هذي الرسالة حضنًا صغيرًا مني. ♡",
+sad:"يا أوبا، مو مطلوب منك تكوني مبسوطة طول الوقت. خذي وقتك، وارتاحي، وتذكري إنك تستحقي اللطف حتى في أصعب أيامك. أرسل لكِ حضنًا كبيرًا من أوسي. 🌷",
+smile:"مهمتك الآن: ابتسمي ولو ابتسامة صغيرة! تخيلي أوسي يحاول يكون رومانسيًا جدًا ثم يخربها بنكتة سخيفة 😂 أحب ضحكتك، وأتمنى يومك يكون ألطف.",
+love:"أحبك لأنك أنتِ، بتفاصيلك الصغيرة وكلامك وطريقتك اللي ما تشبه أحدًا عندي. مو لأنك لازم تكوني مثالية، بل لأن وجودك صار جزءًا جميلًا من أيامي. أحبك يا أوبا. 💗"
+};
+function letter(key){const box=document.getElementById('secret');box.textContent=messages[key];box.classList.add('show');}
+</script>
+</body>
+</html>
