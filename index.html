@@ -31,6 +31,32 @@ footer{text-align:center;padding:28px 8px 0;color:#9b6d7e;font-size:.9rem}
 @keyframes float{50%{transform:translateY(-10px) rotate(8deg)}}
 @keyframes pop{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:480px){section{padding:18px}.grid{gap:8px}.memory{min-height:125px}.memory img{min-height:125px}}
+  
+.photos {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.photo-heart {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: rgba(247, 169, 196, 0.16);
+  border: 2px solid rgba(247, 169, 196, 0.35);
+  clip-path: polygon(
+    50% 100%, 10% 62%, 0% 42%, 2% 24%,
+    15% 10%, 32% 10%, 50% 28%,
+    68% 10%, 85% 10%, 98% 24%,
+    100% 42%, 90% 62%
+  );
+}
+
+.photo-heart img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 </style>
 </head>
 <body>
@@ -56,16 +82,25 @@ footer{text-align:center;padding:28px 8px 0;color:#9b6d7e;font-size:.9rem}
     <div class="letter" id="secret"></div>
   </section>
 
-  <section>
-    <h2>📸 ركن ذكرياتنا</h2>
-    <p class="small">هنا مكان صوركم. استبدلي المربعات بصور حقيقية قبل نشر الموقع.</p>
-    <div class="grid">
-      <div class="memory">صورة لذكرى تحبيها<br>♡</div>
-      <div class="memory">صورة تضحككم كل ما شفتوها<br>♡</div>
-      <div class="memory">لحظة ما تنسيها<br>♡</div>
-      <div class="memory">صورة تمثل حكايتكم<br>♡</div>
+
+<section>
+  <h2>صور أوسي وأوبا 🩷</h2>
+  <div class="grid photos">
+    <div class="photo-heart">
+      <img src="images/osy1.jpg" alt="صورة">
     </div>
-  </section>
+    <div class="photo-heart">
+      <img src="images/oba1.jpg" alt="صورة">
+    </div>
+    <div class="photo-heart">
+      <img src="images/osy2.jpg" alt="صورة">
+    </div>
+    <div class="photo-heart">
+      <img src="images/oba2.jpg" alt="صورة">
+    </div>
+  </div>
+</section>
+
 
   <section>
     <h2>🎵 أغنيتنا</h2>
