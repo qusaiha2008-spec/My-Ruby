@@ -52,6 +52,102 @@ footer{text-align:center;padding:28px 8px 0;color:#9b6d7e;font-size:.9rem}
   display: block;
 }
 
+  
+.story-section {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.story-open-btn,
+.story-back {
+  background: #e88eae;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 13px 22px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.story-cover {
+  margin: 20px auto;
+  max-width: 360px;
+}
+
+.book-cover {
+  background: linear-gradient(145deg, #ffd6e5, #f3a8c5);
+  border: 5px solid #fff0f5;
+  border-radius: 12px 25px 25px 12px;
+  padding: 35px 18px;
+  box-shadow: 5px 7px 15px #d98aa855;
+  color: #8d3c60;
+}
+
+.cover-heart {
+  font-size: 65px;
+}
+
+.book-cover h2 {
+  margin: 12px 0;
+}
+
+.book-cover button {
+  background: #fff7fa;
+  color: #b34f79;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.story-page {
+  background: #fff4f8;
+  border: 2px solid #f3bfd2;
+  border-radius: 18px;
+  padding: 18px;
+  margin: 20px auto;
+  max-width: 420px;
+  color: #78445a;
+}
+
+.story-page img {
+  display: block;
+  width: 100%;
+  max-height: 380px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin: 15px auto;
+}
+
+#story-text {
+  white-space: pre-wrap;
+  line-height: 1.9;
+}
+
+.story-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.story-navigation button {
+  background: #e88eae;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.story-back {
+  margin-top: 15px;
+}
+
 </style>
 </head>
 <body>
@@ -168,6 +264,121 @@ smile:"من دي الحلوةةة؟، عيبب ليش قالبة صورة؟، د
 love:"احبك، وربي احبك كثير، متدريش كيف قلبي يخفق بحبك، الصدق كنت مش مؤمن بموضوع انه ممكن شخص يحبنا لأننا ما كنت حلو يعني ما كنت اسوف نفسي حاجة وربي سمين و اسمر عنصرية و مافيش ذقن و مكبكب و مليااننن حاجات زفت حتى شخصيتي زفت بس سبحان الله من العدم اجيتي انتي، حلوة، طيبة، رقيقة، حنونة، بشوشة و سبحان الله مدري كيف حبيتينا وربي كنت مصدوم كيف كيف معقول كلامي خلاها تحبنا ولو كان واقع ما بتحبنا كذا؟، وربي كنت مصدوم بس انتي حرفياً الي كسرتي العقدة وربي احبك و الحمدلله انك تحبينا وربي  احبك سنيننن و مكنتس متوقع تحبيناا كان صعبب كان احتمال صعبب خاصة بعد ما انرفضت حسيت بقهررر بس كان احسن وربي اننا احبك و اهيمك انتي حياتي و دنيتي كلها وربي احب شخصيتك اللطيفة لأنه بدون تصنع انتي مءا كيوت وربي ما شاء الله تبارك الله  اشتي احضنك وربي وربي استي اكون معك و احميك اساي نتزوج و نعيش سوى وربي بصونك و بحترمك و بخبيك و بنعيش لحظات حلوة و اضمن لأبوك و اخوك انه بكون قد الثقة و بحمي بنتهم و بكون زوح صالح لها، احبك يا بعد عمري💗. 💗"
 };
 function letter(key){const box=document.getElementById('secret');box.textContent=messages[key];box.classList.add('show');}
+
+
+const storyPages = [
+  { title: "صفحتنا 1 ♡", image: "", text: "اكتب كلام الصفحة الأولى هنا" },
+  { title: "صفحتنا 2 ♡", image: "", text: "اكتب كلام الصفحة الثانية هنا" },
+  { title: "صفحتنا 3 ♡", image: "", text: "اكتب كلام الصفحة الثالثة هنا" },
+  { title: "صفحتنا 4 ♡", image: "", text: "اكتب كلام الصفحة الرابعة هنا" },
+  { title: "صفحتنا 5 ♡", image: "", text: "اكتب كلام الصفحة الخامسة هنا" },
+  { title: "صفحتنا 6 ♡", image: "", text: "اكتب كلام الصفحة السادسة هنا" },
+  { title: "صفحتنا 7 ♡", image: "", text: "اكتب كلام الصفحة السابعة هنا" },
+  { title: "صفحتنا 8 ♡", image: "", text: "اكتب كلام الصفحة الثامنة هنا" },
+  { title: "صفحتنا 9 ♡", image: "", text: "اكتب كلام الصفحة التاسعة هنا" },
+  { title: "صفحتنا 10 ♡", image: "", text: "اكتب كلام الصفحة العاشرة هنا" },
+  { title: "صفحتنا 11 ♡", image: "", text: "اكتب كلام الصفحة الحادية عشرة هنا" },
+  { title: "صفحتنا 12 ♡", image: "", text: "اكتب كلام الصفحة الثانية عشرة هنا" },
+  { title: "صفحتنا 13 ♡", image: "", text: "اكتب كلام الصفحة الثالثة عشرة هنا" },
+  { title: "صفحتنا 14 ♡", image: "", text: "اكتب كلام الصفحة الرابعة عشرة هنا" },
+  { title: "صفحتنا 15 ♡", image: "", text: "اكتب كلام الصفحة الخامسة عشرة هنا" },
+  { title: "صفحتنا 16 ♡", image: "", text: "اكتب كلام الصفحة السادسة عشرة هنا" },
+  { title: "صفحتنا 17 ♡", image: "", text: "اكتب كلام الصفحة السابعة عشرة هنا" }
+];
+
+let currentStoryPage = 0;
+
+function openStory() {
+  document.getElementById("story-cover").style.display = "block";
+  document.getElementById("story-pages").style.display = "none";
+  document.getElementById("story-back-cover").style.display = "none";
+}
+
+function startStory() {
+  currentStoryPage = 0;
+  document.getElementById("story-cover").style.display = "none";
+  document.getElementById("story-back-cover").style.display = "none";
+  document.getElementById("story-pages").style.display = "block";
+  showStoryPage();
+}
+
+function showStoryPage() {
+  const page = storyPages[currentStoryPage];
+
+  document.getElementById("story-title").textContent = page.title;
+
+  const picture = document.getElementById("story-image");
+  picture.src = page.image;
+  picture.style.display = page.image ? "block" : "none";
+
+  document.getElementById("story-text").textContent = page.text;
+  document.getElementById("story-count").textContent =
+    (currentStoryPage + 1) + " / " + storyPages.length;
+}
+
+function nextStoryPage() {
+  if (currentStoryPage < storyPages.length - 1) {
+    currentStoryPage++;
+    showStoryPage();
+  } else {
+    document.getElementById("story-pages").style.display = "none";
+    document.getElementById("story-back-cover").style.display = "block";
+  }
+}
+
+function previousStoryPage() {
+  if (currentStoryPage > 0) {
+    currentStoryPage--;
+    showStoryPage();
+  } else {
+    openStory();
+  }
+}
+
+function backToCover() {
+  openStory();
+}
+
 </script>
+
+<!-- زر قصتنا -->
+<section class="story-section">
+  <button class="story-open-btn" onclick="openStory()">
+    📖 قصتنا الجزء الأول
+  </button>
+
+  <div id="story-cover" class="story-cover" style="display:none;">
+    <div class="book-cover">
+      <div class="cover-heart">♡</div>
+      <h2>قصتنا أنا وأنتِ</h2>
+      <p>أوسي ♡ أوبا</p>
+      <button onclick="startStory()">افتحي كتابنا 💗</button>
+    </div>
+  </div>
+
+  <div id="story-pages" class="story-page" style="display:none;">
+    <h3 id="story-title"></h3>
+    <img id="story-image" src="" alt="صورة من قصتنا">
+    <p id="story-text"></p>
+
+    <div class="story-navigation">
+      <button onclick="previousStoryPage()">←</button>
+      <span id="story-count"></span>
+      <button onclick="nextStoryPage()">→</button>
+    </div>
+
+    <button class="story-back" onclick="backToCover()">
+      رجوع للغلاف ♡
+    </button>
+  </div>
+
+  <div id="story-back-cover" class="book-cover" style="display:none;">
+    <div class="cover-heart">♡</div>
+    <h2>نهاية الجزء الأول</h2>
+    <p>وحكايتنا لسه مستمرة يا أوبا 💗</p>
+    <button onclick="openStory()">العودة للغلاف</button>
+  </div>
+</section>
+
 </body>
 </html>
